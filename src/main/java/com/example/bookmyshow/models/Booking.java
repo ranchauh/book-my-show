@@ -8,7 +8,7 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity
+@Entity(name = "bookings")
 public class Booking extends BaseModel { //Ticket
     @Enumerated(EnumType.ORDINAL)
     private BookingStatus bookingStatus;
@@ -18,5 +18,5 @@ public class Booking extends BaseModel { //Ticket
     @OneToMany
     private List<Payment> payments;
     @ManyToOne
-    private BmsUser bmsUser;
+    private User user;
 }

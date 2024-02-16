@@ -9,7 +9,7 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity
+@Entity(name = "regions")
 public class Region extends BaseModel {
     //City
     private String name;

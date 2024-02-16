@@ -10,11 +10,11 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity
+@Entity(name = "theatres")
 public class Theatre extends BaseModel {
     private String name;
     @ManyToOne
     private Region region;
-    @OneToMany
-    private List<Auditorium> screens;
+    @OneToMany(mappedBy = "theatre")
+    private List<Screen> screens;
 }

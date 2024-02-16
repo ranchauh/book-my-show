@@ -9,11 +9,18 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity
-public class BmsUser extends BaseModel {
+@Entity(name = "users")
+public class User extends BaseModel {
     private String name;
     private String email;
     private String password;
-    @OneToMany
+    @OneToMany(mappedBy = "user")
     private List<Booking> bookings;
 }
+
+/*
+
+  1          M
+User ----- Booking
+  1          1
+ */
