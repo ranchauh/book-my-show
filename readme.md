@@ -53,6 +53,8 @@
 
 ![./resources/bms-class-diagram.png](./resources/bms-class-diagram.png)
 
+![./resources/bms-class-diagram-generated.png](./resources/bms-class-diagram-generated.png)
+
 
 ## Schema Design
 
